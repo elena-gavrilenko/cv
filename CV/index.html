@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html change="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="main__title title">
+            <div class="title__switch lang">
+              <span class="lang__en changeColor">en</span>
+              <span>/</span>
+              <span class="lang__ru">ru</span>
+            </div>
+            <h1 class="title__name" data-change="name">Gavrilenko Elena</h1>
+            <div class="title__photo"><img src="./img/photo.jpg" alt="" /></div>
+          </div>
+        </header>
+        <main class="main">
+          <section class="main__section about" id="about-me">
+            <h2 class="about__subtitle subtitle" data-change="about">
+              About me:
+            </h2>
+            <p class="about__text" data-change="about-me">
+              For a long time I worked as an economist. But, finding myself out
+              of work, I realized that this specialty firstly: unclaimed, and
+              secondly: bored. Therefore, I decided to try myself in IT.
+            </p>
+          </section>
+          <section class="main__section education" id="education">
+            <h2 class="education__subtitle subtitle" data-change="education">
+              Education:
+            </h2>
+            <ol class="education__items">
+              <li class="education__item data" data-change="college1">
+                Graduated from the University. F. Skaryna, specializing in
+                mathematics.
+              </li>
+              <li class="education__item" data-change="college2">
+                Graduated from the Belarusian Trade and Economics University of
+                Consumer Cooperatives with a degree in management and economics
+                at an enterprise.
+              </li>
+              <li class="education__item" data-change="college3">
+                IT-academy Step,specializing in Frontend.(In progress)
+              </li>
+            </ol>
+          </section>
+          <section class="main__section work" id="work">
+            <h2 class="work__subtitle subtitle" data-change="work">Work:</h2>
+            <ul class="work__items">
+              <li class="work__item" data-change="job1">
+                LLC Baucomplekt. Production and sale of PVC windows and
+                laminated veneer lumber. Position: Maneger of the Marketing
+                Department.
+              </li>
+              <li class="work__item" data-change="job2">
+                OJSC Salkomm-invest. Food trade. Position: economist.
+              </li>
+              <li class="work__item" data-change="job3">
+                LLC Grandmotors. Sale of spare parts for trucks. Position:
+                economist.
+              </li>
+            </ul>
+          </section>
+          <section class="main__section code" id="code">
+            <h2 class="code__subtitle subtitle" data-change="code">Code:</h2>
+            <pre><code>function reverseNumber(number) {
+    return String(number).split('')
+                         .reverse()
+                         .join('');    
+};</code></pre>
+          </section>
+        </main>
+        <aside class="aside">
+          <div class="aside__made">
+            <div class="aside__item skills">
+              <h2 class="skills__subtitle aside__title" data-change="skills">
+                Skills
+              </h2>
+              <ul class="skills__items">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">JS</li>
+                <li class="skills__item">English A2</li>
+              </ul>
+            </div>
+            <div class="aside__item projects">
+              <h2
+                class="projects__subtitle aside__title"
+                data-change="projects"
+              >
+                Projects
+              </h2>
+              <ul class="projects__items">
+                <li class="projects__item">
+                  <a
+                    href="https://elena-gavrilenko.github.io/project1forcv/solveig/"
+                    >Solveig</a
+                  >
+                </li>
+                <li class="projects__item">
+                  <a
+                    href="https://elena-gavrilenko.github.io/project2forcv/finance/"
+                    >Finance</a
+                  >
+                </li>
+                <li class="projects__item">
+                  <a
+                    href="https://elena-gavrilenko.github.io/mem-slider/cssMemSlider/"
+                    >Mem-slider</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="aside__item contacts" id="contacts">
+              <h2
+                class="contacts__subtitle aside__title"
+                data-change="contacts"
+              >
+                Contacts
+              </h2>
+              <div class="contacts__media">
+                <div class="contacts__item">
+                  <img src="./img/icons/icons8-почта-32.png" alt="" />
+                  <p>gomel-offis@mail.ru</p>
+                </div>
+                <div class="contacts__item">
+                  <img src="./img/icons/icons8-facebook-f-32.png" alt="" />
+                    <a href="https://www.facebook.com/helen.gavrilenko">facebook</a>
+                </div>
+                <div class="contacts__item">
+                  <img src="./img/icons/icons8-телеграмма-app-32.png" alt="" />
+                  <p>@HelenaGavr</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
